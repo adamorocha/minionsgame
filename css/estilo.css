@@ -1,5 +1,6 @@
 html, body {
   height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -782,4 +783,37 @@ transition: transform .2s;
   .footer{
     border-top: 2px solid #c7ab8e;
   }
+}
+
+/* Abaixo de 499px */
+@media only screen and (max-width: 428px) {
+  html, body {
+    height: 100%;
+  }
+
+  .intro1 {
+    margin-top: -30px;
+
+  }
+  .intro2{
+    margin-top: -20px;
+  }
+  .div_balao p img {
+    margin-top: -30px;
+    margin-left: 0px;
+
+  }
+  .pergunta {
+    font-size: 16px;
+    margin-left: 30px;
+    margin-top: -30px;
+    width: 230px ;
+  }
+
+  .minionPergunta {
+    margin-top: 160px;
+    width: 200px;
+    right: 0px;
+  }
+
 }
