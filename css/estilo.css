@@ -293,7 +293,7 @@ transition: transform .2s;
 
 .minionPergunta {
   position:absolute;
-  margin-top: 220px;
+  margin-top: -390px;
   width: 400px;
   right: 50px;
 }
@@ -421,7 +421,7 @@ transition: transform .2s;
   }  
 
   .minionPergunta {
-    margin-top: 270px;
+    margin-top: -340px;
     width: 350px;
     right: 0px;
   }
@@ -509,7 +509,7 @@ transition: transform .2s;
     width: 300px ;
   }
   .minionPergunta {
-    margin-top: 265px;
+    margin-top: -340px;
     width: 350px;
     right: 0px;
   }
@@ -616,7 +616,7 @@ transition: transform .2s;
     width: 260px ;
   }
   .minionPergunta {
-    margin-top: 340px;
+    margin-top: -270px;
     width: 280px;
     right: 0px;
   }
@@ -742,7 +742,7 @@ transition: transform .2s;
     height: 50%;
   }
   .minionPergunta {
-    margin-top: 220px;
+    margin-top: -230px;
     width: 240px;
     right: 0px;
   }
@@ -811,7 +811,7 @@ transition: transform .2s;
   }
 
   .minionPergunta {
-    margin-top: 160px;
+    margin-top: -190px;
     width: 200px;
     right: 0px;
   }
