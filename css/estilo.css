@@ -330,7 +330,7 @@ transition: transform .2s;
 
 /*Ajuste e estilo na página de questão incorreta e página de acertos*/
 .erro {
-  background-image: url(../img/Erro_bg.png);
+  background-image: url(../img/Erro_bg.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
