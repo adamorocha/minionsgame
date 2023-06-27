@@ -133,8 +133,7 @@ section {
 /* estlo do Rodapé onde se localiza o muro de tijolos*/
 .footer{
   background-image: url(../img/wall.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
   box-shadow: 0px -25px 7px #b3654b;
   border-top: 5px solid #c7ab8e;
 }
