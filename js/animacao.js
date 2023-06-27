@@ -25,7 +25,7 @@ function moverImagens() {
             targets: imagem,
             translateX: x,
             translateY: y,
-            duration: 100,
+            duration: 1000,
             easing: 'easeInOutQuad'
         });
     }
