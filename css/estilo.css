@@ -2,6 +2,7 @@ html, body {
   height: 100vh;
   height: 100%;
   overflow: hidden;
+  cursor: url('pointer.cur'), pointer;
 }
 
 /*Estilo Geral*/
@@ -15,12 +16,39 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: url('pointer.cur'), auto;
 }
 
 section {
   display: flex;
   margin: auto;
   height: 33.33%;
+}
+
+a{
+  cursor: url('apointer.cur'), auto;
+}
+
+button{
+  cursor: url('apointer.cur'), auto;
+}
+
+.bd-index {
+  background-image: url(../img/Erro_bg.jpg);
+  cursor: url('pointer.cur'), auto;
+}
+
+
+.bd-index section:first-child {
+  display: flex;
+  margin: auto;
+  height: 10%;
+}
+
+.bd-index section:not(:first-child) {
+  display: flex;
+  margin: auto;
+  height: 30%;
 }
 
 /*Estilo dos botões Iniciar, Prox Fase e botão de tela respostas errada*/
@@ -30,42 +58,44 @@ section {
   height: 80px;
   border: 0px;
   font-weight: bold;
-  color: rgba(8, 1, 75);
-  background-color: #ffc400;
+  color: #fff;
+  background-color: #f60;
   box-shadow: 8px 9px 3px -3px rgba(19, 19, 19, 0.603);
   cursor: pointer;
   font-size: 46px;
   font-family: Arial, Helvetica, sans-serif;
   transition: background-color 1000ms linear;
   z-index: 1;
+  cursor: url('apointer.cur'), auto;
 
 }
 
-.logo_minions {
+.logo_uni {
   position: absolute; 
   left: 0px;
-  top:0px;
-  width: 260px;
+  top:10px;
+  width: 120px;
 }
 
 .atentoLogo {
   position: absolute; 
   right: 0px;
   top:0px;
+  width: 130px;
 }
 
 .curadoriaLogo {
   position: absolute;
   left: 20px;
   bottom:10px;
-  width: 150px;
+  width: 100px;
 }
 
 .treinamentoLogo {
   position: absolute;
   right: 20px;
   bottom:10px;
-  width: 180px;
+  width: 120px;
 }
 
 .mini-cur-logo {
@@ -108,59 +138,50 @@ section {
 
 
 .iniciarJogo:hover{
-  background-color:  rgba(8,1,75);
-  color: #ffc400;
+  background-color:  #fff;
+  color: #f60;
   transition: background-color 1000ms linear;
 }
 
 
-/*Estilo para página index imagens dos minions*/
-.minionSit{
-  position:absolute; 
-  margin-top:-200px;
-  width: 200px;
-  height: 300px;
-}
-.minionsTrio{
-  position:absolute; 
-  right: 0px ; 
-  margin-top:-240px;
-  width: 250px;
-  height: 300px;
-}
-
-
-/* estlo do Rodapé onde se localiza o muro de tijolos*/
-.footer{
-  background-image: url(../img/wall.jpg);
-  background-repeat: repeat;
-  box-shadow: 0px -25px 7px #b3654b;
-  border-top: 5px solid #c7ab8e;
-}
-
-.instrucao {
-  margin: 0px;
-  display: flex;
-  align-items: center;
-  margin: auto;
-  flex-direction: row;
-  align-content:space-around;
-}
-
-.instrucao img {
-  margin-left: 2%;
-  margin-right: 10%;
-}
-.intro1 {
-  width: 300px;
-  height: 100px;
-}
 .intro2{
-  width: 500px;
-  height: 200px;
+  max-width:600px;
+  max-height:500px;
+  min-width:418px;
+  min-height:204px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 30%;
 }
 
-/*Estilo na página das bananas e frutas animadas*/
+/*Estilo para página index imagens dos Dapolino*/
+.minionsTrio{
+  max-width:250px;
+  max-height:300px;
+  min-width:80px;
+  min-height:150px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  margin-right: 20%;
+  margin-top: -40px;
+
+}
+
+
+/* estlo do Rodapé onde se localiza o muro de plantas*/
+.footer{
+  background-image: url(../img/parede.png);
+  background-repeat: repeat;
+  background-size: 20% 100%;
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+
+
+/*Estilo na página das bananas e flores e folhas animadas*/
 
 .minionUP {
   position: absolute;
@@ -170,7 +191,7 @@ section {
 }
 
 .frutaAnimada {
-  width: 300px !important;
+  width: 200px !important;
   position: absolute;
   left: 0px;
   opacity: 0;
@@ -198,10 +219,10 @@ section {
   left: 0px;
   top: 0px;
   width: 154px;
-  height: 40px;
-  border: 16px solid #01426a;
+  height: 25px;
+  border: 10px solid #01426a;
   background-color: #01426a;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   color: white;
 }
@@ -223,6 +244,7 @@ section {
   font-size: 26px;
   margin: 0 auto;
   width: 400px;
+  cursor: url('apointer.cur'), auto;
 }
 .div_balao p img {
   margin-left: -110px;
@@ -242,6 +264,7 @@ section {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
+  cursor: url('apointer.cur'), auto;
 }
 
 .alternativa1 {
@@ -265,7 +288,7 @@ transition: transform .2s;
 
 .index-header {
   width: 100%;
-  height: 73px;
+  height: 50px;
   position: absolute; 
   left: 0px;
   top:-16px;
@@ -273,7 +296,7 @@ transition: transform .2s;
 }
 .index-footer {
   width: 100%;
-  height: 73px;
+  height: 50px;
   position: absolute; 
   left: 0px;
   bottom:-16px;
@@ -292,7 +315,7 @@ transition: transform .2s;
 
 .minionPergunta {
   position:absolute;
-  margin-top: -390px;
+  margin-top: -370px;
   width: 400px;
   right: 50px;
 }
@@ -337,22 +360,23 @@ transition: transform .2s;
 }
 .erro section {
   height: 100%;
+  flex-direction: row;
 }
 
 .proxFase {
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .img-erro-acerto {
   position: absolute; 
 }
 .erro1 {
-  left: 50px;
+  left: 30px;
   bottom:50px;
   width: 450px;
 }
 .erro2 {
-  right: 20px;
+  left: 40px;
   bottom:50px;
   width: 480px;
 }
@@ -364,7 +388,7 @@ transition: transform .2s;
 .acerto1 {
   left: 0px;
   bottom:50px;
-  width: 800px;
+  width: 600px;
 }
 .acerto2 {
   right: 100px;
@@ -379,20 +403,22 @@ transition: transform .2s;
 
 .btn-final {
   width: 400px;
+  height: 30px;
+  padding: 10px 0px;
   font-size: 26px;
-  color: #ffc400;
-  background-color:  rgba(8, 1, 75);
+  color: #f60;
+  background-color:  #fff;
 }
 
 .btn-final:hover {
-  color: rgba(8, 1, 75);
-  background-color:  #ffc400;
+  color: #fff;
+  background-color:  #f60;
 }
 
 /* Area responsiva altera de acordo com a resolução da Tela*/
 
-/* Telas de até 1200px */
-@media only screen and (max-width: 1200px) {
+/* Telas de até 1400px */
+@media only screen and (max-width: 1400px) {
   .alternativa{
       font-size: 18px;
       width: 250px;
@@ -401,66 +427,73 @@ transition: transform .2s;
 
   .index-header {
     width: 100%;
-    height: 73px;
+    height: 55px;
     position: absolute; 
     left: 0px;
     top:-16px;
     background-color: #01426a;
   }
 
-  .intro1 {
-    width: 400px;
-    height: 70px;
-
-  }
-  .intro2{
-    width: 500px;
-    height: 150px;
-
-  }  
-
   .minionPergunta {
-    margin-top: -340px;
+    margin-top: -320px;
     width: 350px;
     right: 0px;
   }
 
-  .logo_minions {
-    width: 260px;
-  }  
+  .div_balao p img {
+    margin-left: -60px;
+    width: 650px;
+  }
 
+  .logo_uni {
+    width: 120px;
+  }
+
+  .iniciarJogo{
+    width: 250px;
+    height: 70px;
+    font-size: 32px;
+  }
 
   .erro-btn {
     margin-top: 300px;
   }
   .erro-btn button {
-    height: 100px;
-    font-size: 42px;
+    height: 70px;
+    font-size: 32px;
+  }
+  .btn-final {
+    width: 400px;
+    height: 30px;
+    padding: 10px 0px;
+    font-size: 26px;
+    color: #f60;
+    background-color:  #fff;
   }
 
   .erro1 {
-    left: 5px;
+    right: 5px;
     bottom:60px;
     width: 350px;
   }
   .erro2 {
-    right: 0px;
+    left: 30px;
     bottom:60px;
     width: 350px;
   }
   .erro-banner {
-    right: 100px;
+    right: 20px;
     top:100px;
-    width: 650px;
+    width: 600px;
   }
   .acerto1 {
     left: 60px;
     bottom:60px;
-    width: 700px;
+    width: 500px;
   }
   .acerto2 {
     right: 40px;
-    top:20px;
+    top:80px;
     width: 400px;
   }
 
@@ -472,28 +505,17 @@ transition: transform .2s;
 
   .index-header {
     width: 100%;
-    height: 73px;
+    height: 55px;
     position: absolute; 
     left: 0px;
     top:-16px;
     background-color: #01426a;
   }
 
-  .logo_minions {
-    width: 260px;
+  .logo_uni {
+    width: 120px;
   }
 
-  .intro1 {
-    width: 300px;
-    height: 60px;
-
-  }
-  .intro2{
-    width: 350px;
-    height: 140px;
-
-  }  
-  
   .alternativa{
       font-size: 16px;
       width: 220px;
@@ -508,7 +530,7 @@ transition: transform .2s;
     width: 300px ;
   }
   .minionPergunta {
-    margin-top: -340px;
+    margin-top: -320px;
     width: 350px;
     right: 0px;
   }
@@ -520,12 +542,25 @@ transition: transform .2s;
     width: 150px !important;
   }
 
+  .iniciarJogo{
+    width: 180px;
+    height: 50px;
+    font-size: 32px;
+  }
+
   .erro-btn {
     margin-top: 350px;
   }
   .erro-btn button {
-    height: 100px;
-    font-size: 42px;
+    height: 70px;
+    font-size: 32px;
+  }
+
+  .btn-final {
+    width: 280px;
+    font-size: 26px;
+    height: 30px;
+    padding: 5px 0px;
   }
 
   .erro1 {
@@ -534,29 +569,26 @@ transition: transform .2s;
     width: 300px;
   }
   .erro2 {
-    right: 0px;
+    left: 20px;
     bottom:60px;
     width: 320px;
   }
   .erro-banner {
-    right: 20px;
-    top:100px;
-    width: 650px;
+    right: 0px;
+    top:50px;
+    width: 600px;
   }
   .acerto1 {
     left: 40px;
     bottom:60px;
-    width: 600px;
+    width: 400px;
   }
   .acerto2 {
     right: 40px;
-    top:30px;
+    top:80px;
     width: 400px;
   }
 
-  .footer{
-    border-top: 3px solid #c7ab8e;
-  }
 
 }
 
@@ -565,42 +597,23 @@ transition: transform .2s;
  
   .index-header {
     width: 100%;
-    height: 73px;
+    height: 55px;
     position: absolute; 
     left: 0px;
     top:-16px;
     background-color: #01426a;
   }
 
-  .logo_minions {
-    width: 260px;
+  .logo_uni {
+    width: 120px;
   }
 
   .iniciarJogo{
-    width: 280px;
-    height: 80px;
+    width: 150px;
+    height: 50px;
     font-size: 26px;
   }
 
-  .pulse {
-    margin-top: -90px;
-  }
-
-  .instrucao {
-    flex-direction: column;
-
-  }
-  .intro1 {
-    width: 200px;
-    height: 60px;
-
-  }
-  .intro2{
-    width: 320px;
-    height: 140px;
-
-  }  
- 
   .alternativa{
       font-size: 13px;
       width: 180px;
@@ -615,7 +628,7 @@ transition: transform .2s;
     width: 260px ;
   }
   .minionPergunta {
-    margin-top: -270px;
+    margin-top: -250px;
     width: 280px;
     right: 0px;
   }
@@ -630,8 +643,15 @@ transition: transform .2s;
     margin-top: 400px;
   }
   .erro-btn button {
-    height: 100px;
-    font-size: 42px;
+    height: 70px;
+    font-size: 32px;
+  }
+
+  .btn-final {
+    width: 280px;
+    font-size: 26px;
+    height: 30px;
+    padding: 5px 0px;
   }
 
   .erro1 {
@@ -641,23 +661,23 @@ transition: transform .2s;
     width: 240px;
   }
   .erro2 {
-    right: 0px;
+    left: 10%;
     bottom:50px;
-    width: 250px;
+    width: 290px;
   }
   .erro-banner {
-    right: 20px;
-    top:200px;
-    width: 550px;
+    right: 0px;
+    top:60px;
+    width: 500px;
   }
   .acerto1 {
     left: 40px;
     bottom:55px;
-    width: 500px;
+    width: 300px;
   }
   .acerto2 {
     right: 40px;
-    top:30px;
+    top:70px;
     width: 400px;
   }
 
@@ -668,42 +688,22 @@ transition: transform .2s;
 
 .index-header {
   width: 100%;
-  height: 73px;
+  height: 55px;
   position: absolute; 
   left: 0px;
   top:-16px;
   background-color: #01426a;
 }
 
-  .logo_minions {
-    width: 260px;
+  .logo_uni {
+    width: 120px;
   }
 
   .iniciarJogo{
-    width: 280px;
-    height: 40px;
-    font-size: 18px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
   }
-
-  .pulse {
-    margin-top: -90px;
-  }
-
-  .instrucao {
-    flex-direction: column;
-
-  }
-  .intro1 {
-    width: 200px;
-    height: 60px;
-
-  }
-  .intro2{
-    width: 320px;
-    height: 140px;
-
-  }
-
 
  .frutaAnimada{ 
   width: 150px !important;
@@ -741,78 +741,49 @@ transition: transform .2s;
     height: 50%;
   }
   .minionPergunta {
-    margin-top: -230px;
+    margin-top: -210px;
     width: 240px;
     right: 0px;
   }
 
-  .erro-btn {
-    margin-top: 400px;
-  }
   .erro-btn button {
-    height: 100px;
-    font-size: 42px;
+    height: 70px;
+    font-size: 20px;
   }
-  .erro1 {
 
+  .erro1 {
     left: 5px;
     bottom:50px;
     width: 200px;
   }
   .erro2 {
-    right: 0px;
+    left: 0px;
     bottom:50px;
-    width: 220px;
+    width: 290px;
   }
   .erro-banner {
     right: 0px;
-    top:220px;
-    width: 440px;
+    top:150px;
+    width: 400px;
   }
   .acerto1 {
     left: 10px;
     bottom:50px;
-    width: 450px;
+    width: 250px;
   }
   .acerto2 {
     right: 10px;
-    top:50px;
+    top:70px;
     width: 400px;
   }
-  .footer{
-    border-top: 2px solid #c7ab8e;
-  }
-}
 
-/* Abaixo de 499px */
-@media only screen and (max-width: 428px) {
-  html, body {
-    height: 100%;
+  .btn-final {
+    width: 280px;
+    font-size: 26px;
+    height: 30px;
+    padding: 5px 0px;
   }
 
-  .intro1 {
-    margin-top: -30px;
-
-  }
-  .intro2{
-    margin-top: -20px;
-  }
-  .div_balao p img {
-    margin-top: -30px;
-    margin-left: 0px;
-
-  }
-  .pergunta {
-    font-size: 16px;
-    margin-left: 30px;
-    margin-top: -30px;
-    width: 230px ;
-  }
-
-  .minionPergunta {
-    margin-top: -190px;
-    width: 200px;
-    right: 0px;
-  }
 
 }
+
